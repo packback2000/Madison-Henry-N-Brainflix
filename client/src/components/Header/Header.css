@@ -1,0 +1,141 @@
+@font-face {
+  font-family: AvenirNextRegular;
+  src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+@font-face {
+  font-family: AvenirNextBold;
+  src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+}
+.Header {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media (min-width: 480px) {
+  .Header {
+    flex-direction: row;
+  }
+}
+.Header .logo {
+  padding: 16px;
+  background-color: #FFFFFF;
+  max-height: 25px;
+  max-width: 120px;
+}
+.Header .header-form {
+  margin: auto;
+  width: 100%;
+}
+@media (min-width: 480px) {
+  .Header .header-form {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 9%;
+  }
+}
+.Header .header-form__button {
+  height: 36px;
+  width: 100%;
+  border-radius: 4px;
+  background-color: #0095FF;
+  color: #FFFFFF;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 700;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+}
+.Header .header-form__button p {
+  margin-left: 25%;
+  text-decoration: none;
+  margin: auto;
+}
+@media (min-width: 480px) {
+  .Header .header-form__button {
+    font-size: 12px;
+    line-height: 20px;
+    font-weight: 700;
+    min-width: 150px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: flex-start;
+    height: 40px;
+  }
+}
+.Header .header-form__button:hover {
+  background-color: #0065AD;
+}
+.Header .header-form__image {
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  background-color: #E1E1E1;
+}
+@media (min-width: 480px) {
+  .Header .header-form__image {
+    display: none;
+  }
+}
+.Header .mohan-over480 {
+  border-radius: 100%;
+  max-width: 40px;
+  max-height: 40px;
+  margin-left: 16px;
+  background-color: #E1E1E1;
+}
+@media (max-width: 480px) {
+  .Header .mohan-over480 {
+    display: none;
+  }
+}
+.Header .header-input__container {
+  display: flex;
+  width: 100%;
+  margin-bottom: 16px;
+  min-height: 36px;
+  min-width: 240px;
+}
+@media (min-width: 480px) {
+  .Header .header-input__container {
+    margin-bottom: 0px;
+    min-height: 40px;
+    min-width: 150px;
+  }
+}
+.Header .header-input__container input:focus {
+  outline: none;
+  border: 2px solid #0095FF;
+}
+.Header .header-input__container input:invalid {
+  border: 1px solid #D22D2D;
+}
+.Header .header-form__input {
+  width: 100%;
+  background-image: url("../../assets/icons/search.svg");
+  background-repeat: no-repeat;
+  background-position: 3%;
+  text-indent: 20px;
+  padding: 8px;
+  border: 1px solid #E1E1E1;
+  border-radius: 4px;
+  margin-right: 16px;
+}
+@media (min-width: 1050px) {
+  .Header .header-form__input {
+    margin-left: 30%;
+  }
+}
+@media (min-width: 480px) {
+  .Header .header-form__input {
+    background-position: 1%;
+    margin-right: 16px;
+    max-width: 100%;
+  }
+}/*# sourceMappingURL=Header.css.map */

@@ -1,0 +1,256 @@
+@import '../../styles/partials/partials.scss';
+
+.uploads {
+
+    hr {
+        width: 100%;
+        margin: 0px;
+        border-left: 0px;
+        border-right: 0px;
+        color: $Mercury;
+        background-color: $Silver;
+        
+    }
+
+    .hidden {
+        width: 100%;
+        display: none;
+
+        @media (min-width: 480px) {
+            display: block;
+
+        }
+    }
+
+    .uploads-title {
+        @include MobilePageHeader;
+        color: $BrainFlix-Black;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0px;
+        padding-top: 24px;
+        padding-bottom: 16px;
+
+        @media (min-width: 480px) {
+            @include PageHeader;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-top: 36px;
+            padding-bottom: 24px;
+
+        }
+    }
+
+    .uploads-thumbnail__title {
+        @include MobileLabelsandButtons;
+        color: $Silver;
+        padding-left: 16px;
+        padding-right: 16px;
+        margin: 0px;
+        padding-bottom: 16px;
+
+        @media (min-width: 480px) {
+            @include LabelsandButtons;
+            padding-top: 24px;
+            padding-left: 24px;
+            padding-right: 24px;
+            padding-bottom: 4px;
+        }
+    }
+
+    .uploads-image__container {
+        margin: 0px 16px;
+        background-color: $Mercury;
+        display: flex;
+
+        @media (min-width: 480px) {
+            margin: 0px 24px;
+            width: 50%;
+            display: flex;
+            margin-bottom: 16px;
+        }
+    }
+
+    
+
+    img {
+        width: 100%;
+        border-radius: 4px;
+
+    }
+
+    .uploads-form {
+        padding-left: 16px;
+        padding-right: 16px;
+        display: flex;
+        flex-direction: column;
+
+        label {
+            @include MobileLabelsandButtons;
+            color: $Silver;
+            padding: 4px 0px;
+
+            @media (min-width: 480px) {
+                @include LabelsandButtons;
+                
+                padding-right: 24px;
+            }
+        }
+
+        input.required:invalid {
+            outline: none;
+            border: 1px solid #D22D2D;
+        }
+
+        input:not:valid {
+            border: 1px solid $Mercury;
+        }
+
+        textarea {
+            display: flex;
+            min-width: 240px;
+            max-width: 100%;
+            border-radius: 4px;
+            border: 1px solid $Mercury;
+            padding: 12px;
+            font-family: AvenirNextRegular;
+            
+            @media (min-width: 480px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        input {
+            display: flex;
+            min-width: 240px;
+            max-width: 100%;
+            border-radius: 4px;
+            border: 1px solid $Mercury;
+            padding: 12px;
+            
+            @media (min-width: 480px) {
+                margin-bottom: 16px;
+            }
+        }
+
+        input:focus, textarea:focus {
+            outline: none;
+            border: 2px solid $BrainFlix-Blue;
+        }
+
+        
+
+        .uploads-button__publish:hover {
+            background-color: $BrainFlix-DarkBlue;
+        }
+    }
+
+    .submit-button__container {
+        @media (min-width: 480px) {
+            display: none;
+        }
+        width: 100%;
+        height: 40px;
+
+       
+
+        .uploads-button__publish {
+            width: 100%;
+            margin-top: 16px;
+            border-radius: 4px;
+            background-color: $BrainFlix-Blue;
+            color: #FFFFFF;
+            border: 0px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include MobileLabelsandButtons;
+
+            @media (min-width: 480px) {
+                min-width: 150px;
+                padding-left: 32px;
+                padding-right: 32px;
+                @include LabelsandButtons;
+            }
+
+            img {
+                max-height: 40px;
+                width: 25%;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            p {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    .submit-button__container-hidden {
+        @media (max-width: 479px) {
+            display: none;
+        }
+
+       
+
+        .uploads-button__publish {
+            width: 100%;
+            margin-top: 16px;
+            border-radius: 4px;
+            background-color: $BrainFlix-Blue;
+            color: #FFFFFF;
+            border: 0px;
+            height: 40px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            @include MobileLabelsandButtons;
+
+            @media (min-width: 480px) {
+                min-width: 150px;
+                padding-left: 32px;
+                padding-right: 32px;
+                @include LabelsandButtons;
+            }
+
+            img {
+                max-height: 40px;
+                width: 25%;
+                display: flex;
+                justify-content: flex-start;
+            }
+
+            p {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+        .uploads-button__cancel {
+            margin-top: 16px;
+            @include MobileLabelsandButtons;
+            height: 40px;
+            border: 0px;
+            border-radius: 4px;
+            color: $BrainFlix-Blue;
+            background-color: #FFFFFF;
+
+            @media (min-width: 480px) {
+                min-width: 150px;
+                padding-left: 32px;
+                padding-right: 32px;
+                @include LabelsandButtons;
+            }
+        }
+
+        .buttons-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-left: 50%;
+        }
+    }

@@ -1,0 +1,235 @@
+@import '../../styles/partials/partials.scss';
+
+.comments-section{
+    margin-left: 16px;
+    margin-right: 16px;
+
+    @media (min-width: 480px) {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    @media (min-width: 1050px) {
+        margin-top: 36px;
+    }
+
+    .comment-form{
+        display: flex;
+
+        .comment-form__image {
+            border-radius: 50%;
+            max-width: 36px;
+            max-height: 36px;
+            background-color: $Mercury;
+            margin-top: 20px;
+
+            @media (min-width: 480px) {
+                max-width: 40px;
+                max-height: 40px;
+            }
+        }
+
+        .comment-form__input-container {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            margin-left: 16px;
+
+            input:focus {
+                outline: none;
+                border: 2px solid $BrainFlix-Blue;
+            }
+
+            .comment-form__button-container {
+                width: 100%;
+                margin-bottom: 16px;
+
+                .comment-form__button {
+                    width: 100%;
+                    @include MobileLabelsandButtons
+                }
+            }
+
+            @media (min-width: 480px) {
+                flex-direction: row;
+                align-items: center;
+
+                .comment-form__button-container {
+                    width: 100%;
+                    margin-left: 16px;
+                    margin-bottom: 0px;
+
+                    .comment-form__button {
+                        width: 100%;
+
+                        p {
+                            margin: auto;
+                            @include LabelsandButtons;
+                        }
+                    }
+                }
+
+                label {
+                    width: 100%;
+                .comment-form__input {
+                    padding: 1px;
+                    width: 100%;
+                }
+            }
+            }
+
+            .comment-form__input {
+                margin-bottom: 16px;
+                min-height: 36px;
+                min-width: 240px;
+                border-radius: 4px;
+                padding: 12px;
+                border: 1px solid $Mercury;
+
+                @media (min-width: 480px) {
+                    min-height: 40px;
+                    padding: 16px;
+                }
+            }
+
+            label {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 4px;
+                @include MobileLabelsandButtons;
+                color: $Silver;
+
+                @media (min-width: 480px) {
+                    @include LabelsandButtons;
+                }
+            }
+
+            .comment-form__button {
+                height: 40px;
+                background-color: $BrainFlix-Blue;
+                color: #FFFFFF;
+                border: 0px;
+                border-radius: 4px;
+                display: flex;
+                align-items: center;
+
+                p {
+                   margin-left: 30%; 
+                }
+            }
+
+            .comment-form__button:hover {
+                background-color: $BrainFlix-DarkBlue
+            }
+        }
+
+        
+    }
+
+    .comments-comments {
+        @include MobileLabelsandButtons;
+    
+        @media (min-width: 480px) {
+            @include LabelsandButtons;
+        }
+    }
+    .comments-list__avatar {
+        background-color: $Mercury;
+        border-radius: 100%;
+        max-width: 36px;
+        max-height: 36px;
+        margin: auto;
+        width: 100%;
+        padding: 15px;
+        
+        @media (max-width: 480px) {
+            margin: 0px;
+            max-width: 40px;
+            max-height: 40px;
+        }
+    }
+    
+    .comments-list {
+        padding: 0px;
+        @include MobileBodyCopy;
+        border-top: 1px solid $Mercury;
+    
+        @media (max-width: 479px) {
+            display: flex;
+            padding-left: 0px;
+            width: 100%;
+
+        }
+    
+        .comment-list__one {
+            padding: 0px;
+        }
+        
+        ul {
+            list-style: none;
+    
+            .comment-list__two {
+                padding-left: 16px;
+            }
+    
+            @media (min-width: 480px) {
+                width: 100%;
+                padding: 40px;
+            }
+        }
+    
+        hr {
+            border: 1px solid $Mercury;
+            margin: 0px;
+            margin-bottom: 24px;
+        }
+        @media (min-width: 480px) {
+            display: flex;
+    
+            .comment-list__two {
+                padding: 0px;
+                width: 100%;
+                margin-left: 40px;
+               
+            }
+    
+            .comment-list__one {
+                width: 1%;
+                padding: 0px;
+            }
+        }
+        .comment-list__comment {
+            li {
+            @include BodyCopy;
+        }
+        }
+        
+        .comments-list__line1 {
+            display: flex;
+            justify-content: space-between;
+
+            .comments-list__timestamp {
+                color: $Silver;
+            }
+        }
+    
+        .comments-list__name {
+            font-family: AvenirNextBold;
+        }
+    }
+}
+
+.comments-number {
+    @media (min-width: 480px) {
+        @include SectionHeader;
+    }
+}
+
+@media (min-width: 1050px) {
+    .video-details__next-videos {
+        display: flex;
+        margin-left: 63px;
+        margin-right: 63px;
+    }
+
+}

@@ -1,0 +1,75 @@
+//colours
+$BrainFlix-Black: #323232;
+$BrainFlix-Blue: #0095FF;
+$Silver: #AFAFAF;
+$White: #FFFFFF;
+$BrainFlix-DarkBlack: #000000;
+$BrainFlix-DarkBlue: #0065AD;
+$Mercury: #E1E1E1;
+$Alabaster: #FAFAFA;
+
+//fonts
+@font-face {
+    font-family: AvenirNextRegular;
+    src: url(../../assets/fonts/AvenirNextLTPro-Regular.otf);
+}
+
+@font-face {
+    font-family: AvenirNextBold;
+    src: url(../../assets/fonts/AvenirNextLTPro-Bold.otf);
+}
+
+//mixins
+    //Desktop and Tablet
+        @mixin PageHeader {
+            font-size: 33px;
+            line-height: 44px;
+            font-weight: 700;
+        }
+        @mixin SectionHeader {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+        @mixin SubHeader {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 700;
+        }
+        @mixin BodyCopy {
+            font-size: 14px;
+            line-height: 22px;
+            font-weight: 400;
+        }
+        @mixin LabelsandButtons {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+
+    //Mobile
+        @mixin MobilePageHeader {
+            font-size: 24px;
+            line-height: 32px;
+            font-weight: 700;
+        }
+        @mixin MobileSectionHeader {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
+        @mixin MobileSubHeader {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 700;
+        }
+        @mixin MobileBodyCopy {
+            font-size: 13px;
+            line-height: 18px;
+            font-weight: 400;
+        }
+        @mixin MobileLabelsandButtons {
+            font-size: 12px;
+            line-height: 20px;
+            font-weight: 700;
+        }
